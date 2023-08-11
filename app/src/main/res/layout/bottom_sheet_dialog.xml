@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/min_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/min_15"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_timer"
+        app:drawableTint="@color/pink" />
+
+    <TextView
+        android:id="@+id/min_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/min_30"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:drawablePadding="10dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_timer"
+        app:drawableTint="@color/pink" />
+
+    <TextView
+        android:id="@+id/min_60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/min_60"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:drawablePadding="10dp"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        app:drawableStartCompat="@drawable/ic_timer"
+        app:drawableTint="@color/pink" />
+
+</LinearLayout>

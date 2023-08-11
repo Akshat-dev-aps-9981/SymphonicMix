@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:strokeColor="@color/pink"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="220dp"
+        android:layout_height="170dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@string/song_img"
+            android:src="@drawable/splash_screen"
+            app:layout_constraintBottom_toTopOf="@id/playlist_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/curved" />
+
+        <TextView
+            android:id="@+id/playlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/playlist_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/delete_btn_playlist"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_playlist" />
+
+        <ImageButton
+            android:id="@+id/delete_btn_playlist"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/playlist_delete"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="@id/playlist_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/playlist_name"
+            app:layout_constraintTop_toTopOf="@id/playlist_name"
+            app:layout_constraintVertical_bias="0.79"
+            app:tint="@color/pink" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

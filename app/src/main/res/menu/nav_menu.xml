@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:checkable="true"
+        android:icon="@drawable/ic_feedback"
+        android:title="@string/feedback" />
+    <item
+        android:id="@+id/nav_settings"
+        android:checkable="true"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/nav_theme"
+        android:checkable="true"
+        android:icon="@drawable/ic_theme"
+        android:title="@string/set_theme" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:checkable="true"
+        android:icon="@drawable/ic_about"
+        android:title="@string/about" />
+
+    <item
+        android:id="@+id/nav_exit"
+        android:checkable="true"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/exit" />
+
+</menu>

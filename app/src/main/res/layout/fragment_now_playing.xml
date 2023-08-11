@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pink"
+    android:gravity="center"
+    tools:context=".fragments.NowPlayingFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_song_np"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:background="@color/white"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_music_splash"
+        app:shapeAppearanceOverlay="@style/curved" />
+
+    <TextView
+        android:id="@+id/song_name_NP"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/previous_btn_NP"
+        android:layout_toEndOf="@id/img_song_np"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/song_name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/previous_btn_NP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/play_pause_btn_NP"
+        android:contentDescription="@string/previous_song"
+        android:foregroundGravity="center"
+        android:src="@drawable/previous" />
+
+    <ImageView
+        android:id="@+id/play_pause_btn_NP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_toStartOf="@id/next_btn_NP"
+        android:contentDescription="@string/play_pause_button"
+        android:foregroundGravity="center"
+        android:src="@drawable/play_button" />
+
+    <ImageView
+        android:id="@+id/next_btn_NP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/next_song"
+        android:foregroundGravity="center"
+        android:src="@drawable/next" />
+
+</RelativeLayout>
